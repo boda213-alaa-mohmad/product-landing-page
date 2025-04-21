@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* Styling header */
 #header {
     width: 100%;
@@ -98,9 +102,11 @@ li a {
 #hero input[type='submit'] {
     max-width: 150px;
     width: 100%;
+    font-weight: bolder;
     height: 30px;
     margin: 15px 0;
     border: 0;
+    cursor: pointer;
     background-color: #f1c40f;
 }
 
@@ -109,3 +115,44 @@ li a {
         margin-top: 170px;
     }
 }
+
+
+/* icons and discription */
+section#features {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 35px;
+}
+
+
+section#features .grid {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 20px;
+}
+
+.icon {
+    width: 15%;
+    text-align: center;
+    color: darkorange;
+}
+
+
+.content p {
+    font-size: 10px;
+}
+
+
+@media (max-width: 550px) {
+    #features .content {
+        text-align: center;
+    }
+
+    #features .icon {
+        display: none;
+    }
+}
+

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Cookie&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&family=Roboto:ital,wght@0,100..900;1,100..900&family=Special+Gothic&family=Work+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Product landing page</title>
 </head>
 <body>
@@ -18,7 +19,7 @@
         </div>
         <nav id="nav-bar">
             <ul>
-                <li><a class="nav-link" href="#feature">Features</a></li>
+                <li><a class="nav-link" href="#features">Features</a></li>
                 <li><a class="nav-link" href="#how-it-works">How it works</a></li>
                 <li><a class="nav-link" href="#pricing">Pricing</a></li>
             </ul>
@@ -31,11 +32,47 @@
         <form id="form" action="https://www.freecodecamp.com/email-submit">
            
             <input type="email" name="email" id="email"
-            placeholder="Enter your email address" />
-            
-            <input type="submit" value="GET STARTED" />
+            placeholder="Enter your email address" required/>
+
+            <input type="submit" id="submit" value="GET STARTED" />
         </form>
      </section>
+
+     <!-- icons and discription  -->
+      <section id="features">
+        
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-fire"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="head">Premium Materials</h3>
+                        <p>
+                            For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+            </div>
+
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-truck" aria-hidden="true"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="head">Fast Shipping</h3>
+                        <p>
+                            For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+            </div>
+                <div class="grid">
+                    <div class="icon">
+                        <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
+                    </div>
+                    <div class="content">
+                        <h3 class="head">Quality Assurance</h3>
+                        <p>
+                            For every purchase you make, we will ensure there are no damages or faults and we will check and test the pitch of your instrument.</p>
+                    </div>
+        </div>
+      </section>
 
     <script src="script.js"></script>
 </body>
