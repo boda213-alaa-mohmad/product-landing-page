@@ -238,3 +238,29 @@ button:hover {
         max-width: 100%;
     }
 }
+
+
+/* footer */
+footer {
+    width: 78%;
+    background: #e3e3e3;
+    margin: 30px auto auto;
+    padding: 20px;
+}
+
+footer ul,
+footer div {
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 5px;
+}
+
+ul li {
+    padding: 0 10px;
+}
+
+@media (max-width: 700px) {
+    footer {
+        width: 100%;
+    }
+}
